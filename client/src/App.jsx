@@ -1,13 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import { Outlet } from "react-router-dom";
 
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/header";
 function App() {
-
   return (
     <>
-     <h1>BLOG WEBSITE</h1>
+      <Header />
+      <div className="md:px-32 px-4 grid-rows-[auto_1fr_auto]">
+        <Outlet />
+      </div>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
