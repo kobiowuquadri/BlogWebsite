@@ -11,13 +11,13 @@ function Homepage() {
         <div className="flex justify-center items-center text-center">
           <Link
             to="/login"
-            className="py-2 hover:text-gray-100 transition-all duration-300 hover:bg-gray-700 rounded-md px-8 font-semibold bg-blue-800 text-white"
+            className="py-3 hover:text-gray-100 transition-all duration-300 hover:bg-gray-700 rounded-md px-8 font-semibold bg-blue-800 text-white"
           >
             Login
           </Link>
           <Link
             to="/register"
-            className="py-2 hover:text-gray-100 transition-all duration-300 hover:bg-gray-700 rounded-md px-8 font-semibold bg-blue-800 text-white"
+            className="py-3 hover:text-gray-100 transition-all duration-300 hover:bg-gray-700 rounded-md px-8 font-semibold bg-blue-800 text-white"
           >
             Regsiter
           </Link>
