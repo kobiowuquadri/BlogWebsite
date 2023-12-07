@@ -12,12 +12,14 @@ import {
 import Homepage from "./pages/homepage/Homepage.jsx";
 import Login from "./pages/login/Login.jsx";
 import Register from "./pages/register/Register.jsx";
+import PageNotFound from "./pages/pagenotfound/PageNotFound.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="/" index={true} element={<Homepage />}></Route>
       <Route path="/login" element={<Login />}></Route>
+      <Route path="*" element={<PageNotFound />}></Route>
       <Route path="/register" element={<Register />}></Route>
     </Route>
   )

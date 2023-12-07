@@ -4,13 +4,13 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/header";
 function App() {
   return (
-    <>
+    <div className="grid grid-rows-[auto_1fr_auto] h-screen">
       <Header />
-      <div className="md:px-32 px-4 grid-rows-[auto_1fr_auto]">
-        <Outlet />
-      </div>
+
+      <Outlet />
+
       <Footer />
-    </>
+    </div>
   );
 }
 

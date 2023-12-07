@@ -5,8 +5,8 @@ function SmallMenu({ show }) {
     <div
       className={
         show
-          ? "space-x-5 md:hidden transition-all duration-300 flex-col bg-gray-50 fixed top-0 left-[0px] right-0 h-[100vh] w-[70%] space-y-5 pt-7"
-          : "space-x-5 md:hidden transition-all duration-300 flex-col bg-gray-50 fixed top-0 left-[-200rem] right-0 h-[100vh] w-[70%] space-y-5 pt-7"
+          ? "space-x-5 md:hidden transition-all duration-300 flex-col z-10 bg-gray-50 fixed top-0 left-[0px] right-0 h-[100vh] w-[70%] space-y-5 pt-7"
+          : "space-x-5 md:hidden transition-all duration-300 flex-col z-10 bg-gray-50 fixed top-0 left-[-200rem] right-0 h-[100vh] w-[70%] space-y-5 pt-7"
       }
     >
       <Link
