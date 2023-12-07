@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;1,400;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+}
+
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
     url("../public/img/banner.jpg");
   position: relative;
   width: 100%;
@@ -16,4 +22,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+img {
+  max-width: 100%;
 }
