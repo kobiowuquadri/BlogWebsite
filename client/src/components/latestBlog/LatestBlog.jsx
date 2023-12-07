@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import posts from "../../data";
-function LatestBlog() {
+function LatestBlog({ children }) {
   return (
-    <div className="my-10 sm:my-14 md:px-32 px-4">
+    <div className=" mt-10 md:px-32 px-4">
       <h1 className="text-semibold text-xl sm:text-3xl text-black">
-        Latest Post
+        {children}
       </h1>
-      <Link to="/blogDetails">
-        <div className="md:mt-16 mt-8 grid sm:grid-cols-2 justify-between md:grid-cols-3 grid-rows-1 gap-8 items-center ">
-          {posts.map((post) => (
-            <div key={post.id}>
+
+      <div className="md:mt-16 mt-8 grid sm:grid-cols-2 justify-between md:grid-cols-3 grid-rows-1 gap-8 items-center ">
+        {posts.map((post) => (
+          <div key={post.id}>
+            <Link to={`/blogDetails/${post.id}`}>
               <img
                 src={post.image}
                 alt={post.title}
@@ -28,10 +29,10 @@ function LatestBlog() {
                 <p className="text-gray-500 text-sm">{post.author}</p>
                 <p className="text-gray-500 text-sm">{post.date}</p>
               </div>
-            </div>
-          ))}
-        </div>
-      </Link>
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

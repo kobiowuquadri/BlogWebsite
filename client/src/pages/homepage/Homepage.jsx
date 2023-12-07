@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import LatestBlog from "../../components/latestBlog/LatestBlog";
+import Footer from "../../components/footer/Footer";
 
 function Homepage() {
   return (
@@ -23,7 +24,10 @@ function Homepage() {
           </Link>
         </div>
       </div>
-      <LatestBlog />
+      <div className="space-y-20">
+        <LatestBlog>Latest Post</LatestBlog>
+        <Footer />
+      </div>
     </>
   );
 }

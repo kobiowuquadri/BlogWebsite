@@ -13,6 +13,9 @@ import Homepage from "./pages/homepage/Homepage.jsx";
 import Login from "./pages/login/Login.jsx";
 import Register from "./pages/register/Register.jsx";
 import PageNotFound from "./pages/pagenotfound/PageNotFound.jsx";
+import About from "./pages/about/About.jsx";
+import Blog from "./pages/blog/Blog.jsx";
+import BlogDetails from "./pages/blogDetails/BlogDetails.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +24,9 @@ const router = createBrowserRouter(
       <Route path="/login" element={<Login />}></Route>
       <Route path="*" element={<PageNotFound />}></Route>
       <Route path="/register" element={<Register />}></Route>
+      <Route path="/about" element={<About />}></Route>
+      <Route path="/blog" element={<Blog />}></Route>
+      <Route path="/blogDetails/:id" element={<BlogDetails />}></Route>
     </Route>
   )
 );
