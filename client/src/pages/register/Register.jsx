@@ -42,7 +42,7 @@ function Register() {
           className="placeholder:text-sm focus:outline-none block rounded-lg border border-gray-400 px-3 md:w-[300px] w-[100%] py-2 placeholder:text-black"
         />
         <button className="block bg-blue-600 hover:bg-blue-700 text-white md:w-[300px] py-2 rounded-lg w-[100%]">
-          Sign up
+          Regsiter
         </button>
         <span className="text-sm">
           Already have an account?
