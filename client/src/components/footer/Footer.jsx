@@ -9,17 +9,23 @@ function Footer() {
           sit amet, consectetur adipisicing elit.
         </p>
       </div>
+
       <div className="space-y-3">
         <h1 className="font-semibold pt-7">Contact us</h1>
-        <p className="font-semibold text-sm">
-          Email: <span className="font-normal"> info@gmail.com</span>
+        <p className="font-semibold text-sm cursor-pointer">
+          Email:
+          <a href="mailto:info@gmail.com" className="font-normal ml-2">
+            Send Email
+          </a>
         </p>
-        <p className="font-semibold text-sm">
+        <p className="font-semibold text-sm cursor-pointer">
           Phone:
-          <span className="font-normal"> 90 445 784 3898</span>
+          <a href="tel:123-456-7890" className="font-normal ml-2">
+            Call Us
+          </a>
         </p>
         <Link to="/about" className="text-sm block">
-          About
+          About us
         </Link>
       </div>
       <div className="space-y-3">
@@ -31,7 +37,7 @@ function Footer() {
         <Link to="/log" className="text-sm block">
           Blog
         </Link>
-        <Link to="/log" className="text-sm block">
+        <Link to="/createPost" className="text-sm block">
           Create Blog
         </Link>
       </div>
