@@ -7,7 +7,7 @@ function LatestBlog({ children }) {
         {children}
       </h1>
 
-      <div className="md:mt-16 mt-8 grid sm:grid-cols-2 justify-between md:grid-cols-3 grid-rows-1 gap-8 items-center ">
+      <div className="md:mt-16 mt-8 grid sm:grid-cols-2 justify-between lg:grid-cols-3 grid-rows-1 gap-8 items-center ">
         {posts.map((post) => (
           <div key={post.id}>
             <Link to={`/blogDetails/${post.id}`}>

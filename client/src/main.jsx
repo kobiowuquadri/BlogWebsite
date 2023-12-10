@@ -17,7 +17,6 @@ import About from "./pages/about/About.jsx";
 import Blog from "./pages/blog/Blog.jsx";
 import BlogDetails from "./pages/blogDetails/BlogDetails.jsx";
 import CreatePost from "./pages/createPost/CreatePost.jsx";
-import Another from "./pages/Another.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,7 +29,6 @@ const router = createBrowserRouter(
       <Route path="/blog" element={<Blog />}></Route>
       <Route path="/createPost" element={<CreatePost />}></Route>
       <Route path="/blogDetails/:id" element={<BlogDetails />}></Route>
-      <Route path="/ano" element={<Another />}></Route>
     </Route>
   )
 );
