@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <div className="md:px-32 px-4 sticky z-10 top-0 left-0  bg-white text-black py-5 flex justify-between items-center shadow-lg">
-      <div className="tracking-widest font-bold text-2xl">Blogify</div>
+      <div className="tracking-widest font-bold sm:text-2xl">Goal Legends</div>
       <Menu />
       <SmallMenu show={show} />
       <FaBars
