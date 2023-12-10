@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
 import posts from "../../data";
+
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 function LatestBlog({ children }) {
   return (
     <div className=" mt-10 md:px-32 px-4">
@@ -7,7 +13,11 @@ function LatestBlog({ children }) {
         {children}
       </h1>
 
-      <div className="md:mt-16 mt-8 grid sm:grid-cols-2 justify-between lg:grid-cols-3 grid-rows-1 gap-8 items-center ">
+      <div
+        className="md:mt-16 mt-8 grid sm:grid-cols-2 justify-between lg:grid-cols-3 grid-rows-1 gap-10 items-center "
+        data-aos="fade-up"
+        data-aos-duration="5000"
+      >
         {posts.map((post) => (
           <div key={post.id}>
             <Link to={`/blogDetails/${post.id}`}>

@@ -4,7 +4,8 @@ const datas = [
     name: "Alimi Rasheed",
     knows: "Alimisolution",
     stack: "Mern Stack + Typescript",
-    whatsApp: +2348080755931,
+    whatsApp: 2348080755931,
+    profession: "Programmer",
     image: "/img/me.jpg",
 
     content:
@@ -15,7 +16,8 @@ const datas = [
     name: "Kobiowu Quadri",
     knows: "DevQuat",
     stack: "Mern Stack + Typescript + Next.js + Software",
-    whatsApp: +2349157750858,
+    whatsApp: 2349157750858,
+    profession: "Programmer",
     image: "/img/him.jpg",
     content:
       "I'm AbdulQuadri Kobiowu, an accomplished Full-Stack Developer specializing in the dynamic MERN (MongoDB, Express.js React.js Node.js) stack, enriched with TypeScript and Next.js. With a strong beckground in frontend and beckend technologies. I bring a holistic approach to web development.",
@@ -47,7 +49,11 @@ function About() {
                   {data.knows}
                 </p>
                 <p className="text-sm mt-3">{data.stack}</p>
+                <p className="text-sm mt-2">+{data.whatsApp}</p>
                 <p className="text-sm tracking-widest mt-5">{data.content}</p>
+                <p className="text-xs tracking-widest bg-blue-800 inline-block px-4 py-1  rounded-md mt-4">
+                  {data.profession}
+                </p>
               </div>
             </div>
           ))}

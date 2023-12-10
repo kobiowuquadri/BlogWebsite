@@ -4,9 +4,12 @@ function Footer() {
     <div className="lg:px-32 px-4  bg-gray-200 shadow-xl pt-5 pb-10 sm:grid xl:grid-cols-4 sm:grid-cols-2 justify-between gap-7">
       <div className="space-y-3 ">
         <p className="text-sm mt-7">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sem ipsum
-          dolor sit amet, consectetur adipisicing elit. Ipsum, maiores, dolor
-          sit amet, consectetur adipisicing elit.
+          At Football Heroes, we are more than just fans; we are storytellers.
+          Our mission is to honor the heroes of the beautiful game by sharing
+          their triumphs, struggles, and everything in between. Whether it's the
+          record-breaking goal scorers, the masterful playmakers, or the unsung
+          heroes behind the scenes, we are dedicated to bringing their stories
+          to life
         </p>
       </div>
 
