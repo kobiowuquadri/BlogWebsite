@@ -5,9 +5,12 @@ import Footer from "../../components/footer/Footer";
 import AOS from "aos";
 
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import Typing from "../../components/Typing-Effect";
+
 // ..
 AOS.init();
 function Homepage() {
+  const text = Typing(" Welcome to our Football Heroes Blog!");
   return (
     <>
       <div className="banner">
@@ -17,7 +20,7 @@ function Homepage() {
             data-aos="fade-up"
             data-aos-duration="4000"
           >
-            Welcome to our Football Heroes Blog!
+            {text}
           </h1>
 
           <p
