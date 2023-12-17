@@ -1,6 +1,17 @@
 const datas = [
   {
     id: 1,
+    name: "Kobiowu Quadri",
+    knows: "DevQuat",
+    stack: "Mern Stack + Typescript + Next.js + Software",
+    whatsApp: 2349157750858,
+    profession: "Programmer",
+    image: "/img/him.jpg",
+    content:
+      "I'm AbdulQuadri Kobiowu, an accomplished Full-Stack Developer specializing in the dynamic MERN (MongoDB, Express.js React.js Node.js) stack, enriched with TypeScript and Next.js. With a strong beckground in frontend and beckend technologies. I bring a holistic approach to web development.",
+  },
+  {
+    id: 2,
     name: "Alimi Rasheed",
     knows: "Alimisolution",
     stack: "Mern Stack + Typescript",
@@ -11,17 +22,7 @@ const datas = [
     content:
       "I'm Alimi AbdulRosheed , a passionate Full-Stack Developer, specialized in MERN STACK (MongoDB, Express.js React.js Node.js) with TypeScript. I have a strong understanding of both frontend and backend technologies. I am a quick learner and a Team Player. And i have confident that i can be useful to any Web Development Team.",
   },
-  {
-    id: 2,
-    name: "Kobiowu Quadri",
-    knows: "DevQuat",
-    stack: "Mern Stack + Typescript + Next.js + Software",
-    whatsApp: 2349157750858,
-    profession: "Programmer",
-    image: "/img/him.jpg",
-    content:
-      "I'm AbdulQuadri Kobiowu, an accomplished Full-Stack Developer specializing in the dynamic MERN (MongoDB, Express.js React.js Node.js) stack, enriched with TypeScript and Next.js. With a strong beckground in frontend and beckend technologies. I bring a holistic approach to web development.",
-  },
+ 
 ];
 
 import Footer from "../../components/footer/Footer";
